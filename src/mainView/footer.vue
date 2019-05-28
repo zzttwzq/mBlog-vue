@@ -1,8 +1,7 @@
 <template>
 
-    <div class='footer'>
-
-       
+    <div class="myfooter">
+        footer;
     </div>
     
 </template>
@@ -11,11 +10,13 @@
     
 </script>
 
-<style>
-    .footer{
-        width: 100%;
-        background: gray;
-        height: 40px;
+<style scoped>
+    .myfooter{
+        box-shadow: 0px 0px 10px #e0e0e0;
+        -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+        -moz-box-shadow: 0px 0px 10px #e0e0e0;
+        -o-box-shadow: 0px 0px 10px #e0e0e0;
+        -ms-box-shadow: 0px 0px 10px #e0e0e0;
     }
 </style>
 

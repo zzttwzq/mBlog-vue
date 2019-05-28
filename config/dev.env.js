@@ -4,6 +4,12 @@ const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  API_ROOT:'"//127.0.0.1/myphp"',
-  
+  login: '"/login"',
+  logout: '"/logout"',
+
+  addLearn: '"/addLearn"',
+  getLearnDetail: '"/getLearnDetail"',
+  updateLearn: '"/updateLearn"',
+  getLearnList: '"/getLearnList"',
+  deleteLearn: '"/deleteLearn"',
 })

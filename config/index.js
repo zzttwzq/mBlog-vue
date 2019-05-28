@@ -6,43 +6,18 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/login': {
+      '/mblog': {
         target: 'http://localhost',
         changeOrigin: true,
         secure: false,
         pathRewrite: {
-          '^/login': 'http://127.0.0.1/mblog/index.php/user/login'
+          '^/mblog': 'http://localhost/mblog/index.php'
         }
       },
-      '/logout': {
-        target: 'http://localhost',
-        changeOrigin: true,
-        secure: false,
-        pathRewrite: {
-          '^/logout': 'http://127.0.0.1/mblog/index.php/user/logout'
-        }
-      },
-      '/getLearnList': {
-        target: 'http://localhost',
-        changeOrigin: true,
-        secure: false,
-        pathRewrite: {
-          '^/getLearnList': 'http://127.0.0.1/mblog/index.php/learn/getLearnList'
-        }
-      },
-      // '/addLearn': {
-      //   target: 'http://localhost',
-      //   changeOrigin: true,
-      //   secure: false,
-      //   pathRewrite: {
-      //     '^/addLearn': 'http://127.0.0.1/mblog/index.php/learn/addLearn'
-      //   }
-      // },
     },
 
     // Various Dev Server settings
@@ -84,16 +59,6 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    // proxyTable: {
-    //   '/login': {
-    //     target: 'http://127.0.0.1/mblog/index.php/user/login',
-    //     changeOrigin: true,
-    //     secure: false,
-    //     pathRewrite: {
-    //       '^/api': 'http://127.0.0.1/mblog/index.php/user.php/user/'
-    //     }
-    //   }
-    // },
 
     /**
      * Source Maps
